@@ -89,9 +89,9 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 			maximized(player, "full_notepad",
 			"image_button[0,0;.75,.3;;save_notes;Save;true;false;]" ..
 			"image_button[.6,0;.75,.3;;open_notes;Open;true;false;]" ..
-			"image_button[9.9,0;.5,.3;;minimize_np;--;true;false;]" ..
-			"image_button[10.2,-.05;.5,.4;window_w.png;window_np;;true;false;]" ..
-			"image_button[10.5,0;.5,.3;;close_notepad;X;true;false;]" ..
+			"image_button[9.9,0;.35,.295;minimize_w.png;minimize_np;;true;false;]" ..
+			"image_button[10.2,0;.38,.297;window_w.png;window_np;;true;false;]" ..
+			"image_button[10.5,0;.38,.297;close_w.png;close_notepad;;true;false;]" ..
 			"textarea[.25,.5;11,8.5;notes;;" .. minetest.formspec_escape(text) .. "]" ..
 			current_tasks)
 		end
